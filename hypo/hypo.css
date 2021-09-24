@@ -53,3 +53,12 @@ main {
     border: 1px solid var(--dark-color);
 }
 
+.link-home {
+    text-decoration: none;
+    border: 1px solid black;
+    padding: 1rem 1rem;
+    border-radius: 1rem;
+    margin: 5rem 1rem;
+    color: white;
+    font-size: x-large;
+}
