@@ -23,12 +23,13 @@ function calculateScore(){
     for ( var value of formData.values()){
         if( value === rightAnswer[i] ){
             score = score+1;
-            i = i+1;
-        }else{
-            i = i+1;
+            
         }
+        i = i+1;
+
+    }
         
-        }
+        
         showMessage(`Your score is : ${score} Points `);
     }
    
