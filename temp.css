@@ -1,0 +1,23 @@
+
+
+.heading-cont {
+    background-color:#1E3A8A
+     ;
+     padding: 1rem 1rem;
+     border-bottom-left-radius: 1rem;
+     text-align: right;
+}
+
+.link-primary {
+    text-decoration: none;
+    color: white;
+    padding: 0.5rem 0.5rem;
+    
+
+}
+.header{
+    font-size: large;
+    font-weight: bold;
+    text-align: left;
+    color: white;
+}

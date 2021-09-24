@@ -7,12 +7,20 @@
     <title>Triangle Quiz</title>
     <link rel="stylesheet" href="quiz.css">
 </head>
-<body>
-     <div>
+<body> 
+    
+    <div class="heading-cont">
+        <div class="header">Fun With Triangles</div>
+        <a class="link-primary" href="/">Link primary</a>
+        <a class="link-primary" href="/">Link primary</a>
+        <a class="link-primary" href="/">Link primary</a>
+    </div>
+
+     <div class="container">
          <h1>Quiz on triangles</h1>
          <h3>For each correct answer you will get 1 point</h3>
          <form class="quiz-form">
-             <div class="question-container">
+             <div class="question-container box">
                  <p>What is the third angle for the triangle where angle1 = 45 and angle2 = 45. </p>
                  <label><input type="radio" name="question1" value="45" />45</label>
                  <label><input type="radio" name="question1" value="90" />90</label>
@@ -25,7 +33,7 @@
                 <label><input type="radio" name="question2" value="acute"/>acute</label>
                 <label><input type="radio" name="question2" value="right angled"/>right angled</label>
             </div>
-            <div class="question-container">
+            <div class="question-container box">
                 <p>A triangle can have</p>
                 <label><input type="radio" name="question3" value="one right angle"/>one right angle</label>
                 <label><input type="radio" name="question3" value="two right angles"/>two right angles</label>
@@ -37,7 +45,7 @@
                 <label><input type="radio" name="question4" value="12,16,20"/>12, 16, 20</label>
                 
             </div>
-            <div class="question-container">
+            <div class="question-container box">
                 <p>Which of the following triangles are always similar?</p>
                 <label><input type="radio" name="question5" value="Equilateral triangle"/>Equilateral triangle</label>
                 <label><input type="radio" name="question5" value="Isosceles triangle"/>Isosceles triangle</label>
@@ -49,7 +57,7 @@
                 <label><input type="radio" name="question6" value="85"/>85</label>
                 
             </div>
-            <div class="question-container">
+            <div class="question-container box">
                 <p>If the largest angle in a triangle is 70°, what is the least possible value of the smallest angle of the triangle?</p>
                 <label><input type="radio" name="question7" value="30"/>30</label>
                 <label><input type="radio" name="question7" value="10"/>10</label>
@@ -61,7 +69,7 @@
                 <label><input type="radio" name="question8" value="2a"/>2a</label>
                 <label><input type="radio" name="question8" value="None"/>None of these</label>
             </div>
-            <div class="question-container">
+            <div class="question-container box">
                 <p>A scalene triangle has ___ lines of symmetry</p>
                 <label><input type="radio" name="question9" value="two"/>two</label>
                 <label><input type="radio" name="question9" value="no"/>no</label>
@@ -76,7 +84,7 @@
 
          </form>
          <button id="btn-check" class="btn-box"  >Submit</button>
-         <div id="output-box" >Hi</div>
+         <div id="output-box" ></div>
      </div>
      <script src="quiz.js"></script>
 </body>
