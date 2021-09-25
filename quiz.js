@@ -20,7 +20,7 @@ function calculateScore(){
     var formData = new FormData(formAnswers);
     var score = 0;
     var i = 0;
-    for ( var value of formData.values()){
+    for ( let value of formData.values()){
         if( value === rightAnswer[i] ){
             score = score+1;
             
