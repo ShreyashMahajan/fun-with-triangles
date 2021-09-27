@@ -9,11 +9,15 @@ function checkTriangle(){
     var b = Number(angleTwo.value);
     var c = Number(angleThree.value);
     if( (a&&b&&c) != 0) {
+        if( a>0 && b>0 && c>0) {
      if((a+b+c) === 180) {
       displayOutput.innerText = "It is a Triangle";
      } else {
          displayOutput.innerText = "It is Not a Triangle";
-     }}else {
+     }} else {
+         displayOutput.innerText="Please input positive value";
+     }
+    } else {
          displayOutput.innerText = "please Input Correct Values";
      }
 }
