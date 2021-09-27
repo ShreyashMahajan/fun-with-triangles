@@ -2,18 +2,18 @@ var inputBase = document.querySelector("#valueBase");
 var inputHeight = document.querySelector("#valueHeight");
 var buttonSubmit = document.querySelector("#button-hypo");
 var HypoDisplay = document.querySelector("#output-box");
-var areaDisplay = document.querySelector("#area-display");
 
 
-function calculateAreaAndHypotenuse(){ 
+
+function calculateHypotenuse(){ 
     var base = inputBase.value;
     var height = inputHeight.value;
     if ( base >0 && height >0){ 
     if(base&&height){
     var hypotenuse = valueOfHypotenuse(base,height);
-    var areaCalculated =  areaOfTriangle(base,height);
+    
     HypoDisplay.innerText ="Hypotenuse of triangle is :"+hypotenuse;
-    areaDisplay.innerText="Area of Triangle is :"+areaCalculated;
+    
 } else {
     HypoDisplay.innerText="Please input valid Values";
 }
@@ -22,7 +22,7 @@ function calculateAreaAndHypotenuse(){
     }
 }
 
-buttonSubmit.addEventListener("click",calculateAreaAndHypotenuse);
+buttonSubmit.addEventListener("click",calculateHypotenuse);
 
 function valueOfHypotenuse(b,h){
      var area = b*b + h*h;
@@ -30,10 +30,7 @@ function valueOfHypotenuse(b,h){
      return squareRoot;
 }
 
-function areaOfTriangle(b,h){
-    var area = 0.5*b*h;
-    return area;
-}
+
 
 
 
