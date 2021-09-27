@@ -8,7 +8,8 @@ var areaDisplay = document.querySelector("#area-display");
 function calculateAreaAndHypotenuse(){ 
     var base = inputBase.value;
     var height = inputHeight.value;
-    if(base&&height ===0){
+    if ( base >0 && height >0){ 
+    if(base&&height){
     var hypotenuse = valueOfHypotenuse(base,height);
     var areaCalculated =  areaOfTriangle(base,height);
     HypoDisplay.innerText ="Hypotenuse of triangle is :"+hypotenuse;
@@ -16,6 +17,9 @@ function calculateAreaAndHypotenuse(){
 } else {
     HypoDisplay.innerText="Please input valid Values";
 }
+    } else {
+        HypoDisplay.innerText="Please input Positive values";
+    }
 }
 
 buttonSubmit.addEventListener("click",calculateAreaAndHypotenuse);
